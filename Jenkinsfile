@@ -13,7 +13,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: cx_result.pdf
+            archiveArtifacts artifacts: 'cx_result.pdf'
         }
     }
 }
