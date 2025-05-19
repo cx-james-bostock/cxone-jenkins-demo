@@ -10,4 +10,10 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            archiveArtifacts artifacts: cx_result.pdf
+        }
+    }
 }
